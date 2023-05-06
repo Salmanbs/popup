@@ -24,7 +24,8 @@ window.onclick = function (event) {
   }
 };
 
-function handleClick(type) {
+function handleClick(type,event) {
+  event.preventDefault();
   const oneTimeBtn = document.getElementById("one-time-btn");
   const monthlyBtn = document.getElementById("monthly-btn");
   var duration = document.getElementById("duration");
